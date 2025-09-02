@@ -10,14 +10,13 @@
 <body>
   <!-- Criar um container principal da calculadora -->
   <div id="container">
-    <!-- Criar um span onde será colcado os números e as operações-->
-    <span id="calculator-display"></span>
+    <!-- Criar um input onde será colcado os números e as operações-->
+    <input type="text" id="calculator-display"></input>
     <!-- Criar uma div para os botões e os operadores, usar o dataset -->
     <div id="operators">
       <span class="operator" data-operator="clear">C</span>
       <span class="operator" data-operator="(">(</span>
       <span class="operator" data-operator=")">)</span>
-      <span class="operator" data-operator="%">%</span>
       <span class="operator" data-operator="/">/</span>
       <span class="operator" data-operator="7">7</span>
       <span class="operator" data-operator="8">8</span>
@@ -31,15 +30,12 @@
       <span class="operator" data-operator="2">2</span>
       <span class="operator" data-operator="3">3</span>
       <span class="operator" data-operator="+">+</span>
-      <span class="operator" data-operator="empty"></span>
-      <span class="operator" data-operator="0">0</span>
       <span class="operator" data-operator=",">,</span>
-      <span class="operator" data-operator="=">=</span>
+      <span class="operator" data-operator="0">0</span>
+      <span class="operator operator-equals" data-operator="=">=</span>
     </div>
     <!-- Criar uma div que mostra o resultado da operação -->
-    <div id="result">
-      <span class="result-display"></span>
-    </div>
+    <span class="result-display"></span>
   </div>
 </body>
 </html>
